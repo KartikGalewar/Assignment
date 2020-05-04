@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        
+        <title>Registration Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> 
+        <link rel="stylesheet" type="text/css" href="./css/global.css" >
+    </head>
+    <body>
+        
+        
+        <section class="container-fluid" >
+            <div class="row justify-content-center" >
+                <div class="col-12 col-sm-6 col-md-3">
+                    <form class="form-container" action="RegisterServlet" name="regForm" method="post" >
+                         <div class="form-group">
+                            <label for="inputName1">Name</label>
+                            <input type="text" class="form-control" name="u_name" id="inputName1" placeholder="Enter your name" required>
+                            <small id="errname" ></small> 
+                         </div>
+                        
+                        <div class="form-group">
+                            <label for="inputEmail1">Email address</label>
+                            <input type="email" class="form-control" name="u_email" id="inputEmail1" placeholder="Enter valid email address" required>
+                             <small id="erremail" ></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputNumber1">Phone Number</label>
+                            <input type="number" class="form-control" id="inputNumber1" name="phn" placeholder="Enter 10 digit phone Number" required>
+                            <small id="errphn" ></small>
+                        </div>
+                       
+                        <button type="submit" class="btn btn-primary btn-block" >Register</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<script src="./js/validate.js"></script>
+    </body>
+</html>
